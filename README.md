@@ -1,2 +1,2 @@
-# iclhf.github.io
+# ICLHF
 Official Repository of In-Context Learning from Human Feedback (ICLHF)
