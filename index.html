@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>In-situ Value-aligned Human-Robot Interactions with Physical Constraints</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- Latex Support -->
+  <script>
+    MathJax = {
+      loader: {
+        load: [
+          'input/tex-base', '[tex]/newcommand', '[tex]/action',
+          'output/chtml',
+          'a11y/explorer'
+        ]
+      },
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        packages: ['base', 'newcommand', 'action']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">In-situ Value-aligned Human-Robot Interactions with Physical
+              Constraints</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Hongtao Li</a><sup>1, 2</sup>,</span>
+              <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Ziyuan Jiao</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiaofeng Liu</a><sup>1,</sup>$^\dagger$,</span>
+              <span class="author-block">
+                <a href="FORTH AUTHOR PERSONAL LINK" target="_blank">Hangxin Liu</a><sup>2,</sup>$^\dagger$,</span>
+              <span class="author-block">
+                <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Zilong Zheng</a><sup>2,</sup>$^\dagger$
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>College of Artificial Intelligence and Automation, Hohai University<br>
+                <sup>2</sup>State Key Laboratory of General Artificial Intelligence, BIGAI, Beijing, China<br>
+                <!-- Conferance name and year -->
+              </span>
+              <span class="eql-cntrb"><small><br>$^\dagger$Indicates the Corresponding Authors</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/show.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          We introduce In-Context Reinforcement Learning from Human Feedback (IC-RLHF) algorithm that learns human
+          preferences in situ and combines them with physical constraints to accomplish the task.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Equipped with Large Language Models (LLMs), human-centered robots are now capable of completing a wide
+              range of tasks that were previously considered difficult or impossible. However, the completion of many
+              tasks is not enough for cognitive robots, especially for service robots, which should learn human
+              preferences and apply them to future scenarios. In this work, we propose a framework that combines
+              physical constraints and human preferences, which requires robots to complete tasks while taking into
+              account physical feasibility and user preferences. First, we designed a benchmark that contains everyday
+              household activities whose assessment is often interspersed with specific preferences. Then we proposed
+              In-Context Reinforcement Learning from Human Feedback (RLHF), a method of performing RLHF in the form of
+              In-Context Learning, in which human feedback comes from direct instructions, and adjustments made
+              intentionally or unintentionally in daily life. Extensive sets of experiments, testing the LLM's ability
+              to generate task plans and trade-offs between physical constraints and preferences, have demonstrated the
+              efficiency of our method.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Approach video -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3">Approach</h2>
+
+        <h2 class="subtitle has-text-centered">
+          <br><strong>
+            A Brief Overview of IC-RLHF Workflow
+          </strong>
+        </h2>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/algorithm.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h2>
+          IC-RLHF algorithm includes five steps:
+          <ol>
+            <li>
+              Make initial plan with user's instruction and summarized preference
+            </li>
+            <li>
+              Three process for the preliminary planning of LLMs
+            </li>
+            <li>
+              Use POG, an algorithm for efficient sequential manipulation planning on the scene graph, to refine the
+              details of the planning
+            </li>
+            <li>
+              Execute the plan and get physical feedback
+            </li>
+            <li>
+              Reflect human preference and update the plan
+            </li>
+          </ol>
+
+        </h2>
+
+        <h2 class="subtitle has-text-centered">
+          <br><strong>
+            A Simulated Demonstration Case
+          </strong>
+        </h2>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/case.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End video -->
+
+
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Results</h2>
+
+        <h2 class="subtitle has-text-centered">
+          <br><strong>
+            Simulation Experiments
+          </strong>
+        </h2>
+
+        <section class="hero is-small">
+          <div class="hero-body">
+            <div class="container">
+
+              <span style="font-size: large; padding-left: 145px;">
+                Messy
+              </span>
+              <span style="font-size: large; padding-left: 255px;">
+                Physical
+              </span>
+              <span style="font-size: large; padding-left: 230px;">
+                Preference
+              </span>
+              <span style="font-size: large; padding-left: 190px;">
+                Physical + Preference
+              </span>
+
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item">
+                  <img src="static/images/figure_1.png" alt="MY ALT TEXT" />
+                  <h2 class="subtitle has-text-centered">
+                    Unload car with human preference: "keep things in one place. I do not want to make two trips."
+                  </h2>
+                </div>
+                <div class="item">
+                  <img src="static/images/figure_2.png" alt="MY ALT TEXT" />
+                  <h2 class="subtitle has-text-centered">
+                    Unpack suitcase with human preference: "The bed is for sleeping, and I do not like things that have
+                    nothing to do with sleeping on the bed."
+                  </h2>
+                </div>
+                <div class="item">
+                  <img src="static/images/figure_3.png" alt="MY ALT TEXT" />
+                  <h2 class="subtitle has-text-centered">
+                    Clean room with human preference: "The bed is for sleeping, and I do not like things that have
+                    nothing to do with sleeping on the bed."
+                  </h2>
+                </div>
+                <div class="item">
+                  <img src="static/images/figure_4.png" alt="MY ALT TEXT" />
+                  <h2 class="subtitle has-text-centered">
+                    Tidy table with human preference: "I like that everything is laid out flat on the table, not
+                    stacked."
+                  </h2>
+                </div>
+                <div class="item">
+                  <img src="static/images/figure_5.png" alt="MY ALT TEXT" />
+                  <h2 class="subtitle has-text-centered">
+                    Tidy table with human preference: "I like that everything is laid out flat on the table, not
+                    stacked."
+                  </h2>
+                </div>
+                <div class="item">
+                  <img src="static/images/figure_6.png" alt="MY ALT TEXT" />
+                  <h2 class="subtitle has-text-centered">
+                    Tidy table with human preference: "I like that everything is laid out flat on the table, not
+                    stacked."
+                  </h2>
+                </div>
+                <div class="item">
+                  <img src="static/images/figure_7.png" alt="MY ALT TEXT" />
+                  <h2 class="subtitle has-text-centered">
+                    Clean room with all the human preference.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <h2 class="subtitle has-text-centered">
+          <br><strong>
+            Real Robot Experiments
+          </strong>
+        </h2>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/real_robot.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
