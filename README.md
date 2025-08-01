@@ -1,4 +1,4 @@
 # ICLHF
-Official Home page of In-Context Learning from Human Feedback (ICLHF)
+Official home page of "In-situ Value-aligned Human-Robot Interactions with Physical Constraints"
 
 Code is comming soon!
