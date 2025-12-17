@@ -1,398 +1,541 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
-  <meta property="og:url" content="URL OF THE WEBSITE" />
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="In-situ Value-aligned Human-Robot Interactions with Physical Constraints - Hongtao Li">
+  <meta name="description"
+    content="We introduce In-Context Learning from Human Feedback (ICLHF) algorithm that learns human preferences in situ and combines them with physical constraints to accomplish the task.">
+  <meta name="keywords"
+    content="Human-Robot Interaction, Cognitive Robotics, Human In The Loop, Large Language Models, AI">
+  <meta name="author" content="Hongtao Li, Ziyuan Jiao, Xiaofeng Liu, Hangxin Liu, Zilong Zheng">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
 
-  <title>In-situ Value-aligned Human-Robot Interactions with Physical Constraints</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BIGAI">
+  <meta property="og:title" content="In-situ Value-aligned Human-Robot Interactions with Physical Constraints">
+  <meta property="og:description"
+    content="We introduce In-Context Learning from Human Feedback (ICLHF) algorithm that learns human preferences in situ and combines them with physical constraints to accomplish the task.">
+  <meta property="og:url" content="https://iclhf.github.io">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/images/graphical_abstract.png">
+  <meta property="og:image:width" content="1728">
+  <meta property="og:image:height" content="999">
+  <meta property="og:image:alt"
+    content="In-situ Value-aligned Human-Robot Interactions with Physical Constraints - Research Preview">
+  <meta property="article:published_time" content="2025-10-19T00:00:00.000Z">
+  <meta property="article:author" content="Hongtao Li">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Human-Robot Interaction">
+  <meta property="article:tag" content="Cognitive Robotics">
 
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <meta name="twitter:title" content="In-situ Value-aligned Human-Robot Interactions with Physical Constraints">
+  <meta name="twitter:description"
+    content="We introduce In-Context Learning from Human Feedback (ICLHF) algorithm that learns human preferences in situ and combines them with physical constraints to accomplish the task.">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/images/graphical_abstract.png">
+  <meta name="twitter:image:alt"
+    content="In-situ Value-aligned Human-Robot Interactions with Physical Constraints - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="In-situ Value-aligned Human-Robot Interactions with Physical Constraints">
+  <meta name="citation_author" content="Li, Hongtao">
+  <meta name="citation_author" content="Jiao, Ziyuan">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="IROS">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2508.07606">
+
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <title>In-situ Value-aligned Human-Robot Interactions with Physical Constraints - Hongtao Li | Academic Research
+  </title>
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
 
-  <!-- Latex Support -->
-  <script>
-    MathJax = {
-      loader: {
-        load: [
-          'input/tex-base', '[tex]/newcommand', '[tex]/action',
-          'output/chtml',
-          'a11y/explorer'
-        ]
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "In-situ Value-aligned Human-Robot Interactions with Physical Constraints",
+    "description": "We introduce In-Context Learning from Human Feedback (ICLHF) algorithm that learns human preferences in situ and combines them with physical constraints to accomplish the task.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Hongtao Li",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "BIGAI"
+        }
       },
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        packages: ['base', 'newcommand', 'action']
+      {
+        "@type": "Person",
+        "name": "Ziyuan Jiao",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "BIGAI"
+        }
       }
-    };
+    ],
+    "datePublished": "2025-10-19",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BIGAI"
+    },
+    "url": "https://iclhf.github.io",
+    "image": "https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/images/graphical_abstract.png",
+    "keywords": ["Human-Robot Interaction", "Cognitive Robotics", "Human In The Loop", "Large Language Models", "AI"],
+    "abstract": "Equipped with Large Language Models (LLMs), human-centered robots are now capable of performing a wide range of tasks that were previously deemed challenging or unattainable. However, merely completing tasks is insufficient for cognitive robots, who should learn and apply human preferences to future scenarios. In this work, we propose a framework that combines human preferences with physical constraints, requiring robots to complete tasks while considering both. Firstly, we developed a benchmark of everyday household activities, which are often evaluated based on specific preferences. We then introduced In-Context Learning from Human Feedback (ICLHF), where human feedback comes from direct instructions and adjustments made intentionally or unintentionally in daily life. Extensive sets of experiments, testing the ICLHF to generate task plans and balance physical constraints with preferences, have demonstrated the efficiency of our approach.",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://iclhf.github.io"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Human-Robot Interaction"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Cognitive Robotics"
+      }
+    ]
+  }
   </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ICLHF",
+    "url": "https://iclhf.github.io",
+    "logo": "https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/images/favicon.ico",
+    "sameAs": [
+      "https://github.com/ICLHF/ICLHF"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">In-situ Value-aligned Human-Robot Interactions with Physical
-              Constraints</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://iclhf.github.io" target="_blank">Hongtao Li</a><sup>1, 2</sup>,</span>
-              <span class="author-block">
-                <a href="https://sites.google.com/g.ucla.edu/zyjiao" target="_blank">Ziyuan Jiao</a><sup>2</sup>,</span>
-              <span class="author-block">
-                <a href="https://jszy.hhu.edu.cn/lxf100" target="_blank">Xiaofeng Liu</a><sup>1,</sup>$^\dagger$,</span>
-              <span class="author-block">
-                <a href="https://liuhx111.github.io" target="_blank">Hangxin Liu</a><sup>2,</sup>$^\dagger$,</span>
-              <span class="author-block">
-                <a href="https://zilongzheng.github.io" target="_blank">Zilong Zheng</a><sup>2,</sup>$^\dagger$
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <sup>1</sup>College of Artificial Intelligence and Automation, Hohai University<br>
-                <sup>2</sup>State Key Laboratory of General Artificial Intelligence, BIGAI, Beijing, China<br>
-                <!-- Conferance name and year -->
-              </span>
-              <span class="eql-cntrb"><small><br>$^\dagger$Indicates the Corresponding Authors</small></span>
-            </div>
-
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- Arxiv PDF link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2508.07606" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://github.com/ICLHF/ICLHF" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2508.07606" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Teaser video-->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
+  <main id="main-content">
+    <section class="hero">
       <div class="hero-body">
-        <video poster="" id="show_video" autoplay controls muted loop height="100%">
-          <!-- Your video here -->
-          <source src="https://github.com/ICLHF/iclhf.github.io/raw/refs/heads/main/static/videos/show.mp4"
-            type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          We introduce In-Context Learning from Human Feedback (ICLHF) algorithm that learns human
-          preferences in situ and combines them with physical constraints to accomplish the task.
-        </h2>
-      </div>
-    </div>
-  </section>
-  <!-- End teaser video -->
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">In-situ Value-aligned Human-Robot Interactions with Physical Constraints</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="https://iclhf.github.io" target="_blank" rel="noopener noreferrer">Hongtao Li</a><sup>1, 2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://sites.google.com/g.ucla.edu/zyjiao" target="_blank" rel="noopener noreferrer">Ziyuan Jiao</a><sup>2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://jszy.hhu.edu.cn/lxf100" target="_blank" rel="noopener noreferrer">Xiaofeng Liu</a><sup>1,✉</sup>,</span>
+                <span class="author-block">
+                  <a href="https://liuhx111.github.io" target="_blank" rel="noopener noreferrer">Hangxin Liu</a><sup>2,✉</sup>,</span>
+                <span class="author-block">
+                  <a href="https://zilongzheng.github.io" target="_blank" rel="noopener noreferrer">Zilong Zheng</a><sup>2,✉</sup>
+                </span>
+              </div>
 
-  <!-- Paper abstract -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Equipped with Large Language Models (LLMs), human-centered robots are now capable of performing a wide
-              range of tasks that were previously deemed challenging or unattainable. However, merely completing tasks
-              is insufficient for cognitive robots, who should learn and apply human preferences to future scenarios. In
-              this work, we propose a framework that combines human preferences with physical constraints, requiring
-              robots to complete tasks while considering both. Firstly, we developed a benchmark of everyday household
-              activities, which are often evaluated based on specific preferences. We then introduced In-Context
-              Learning from Human Feedback (ICLHF), where human feedback comes from direct instructions and adjustments
-              made intentionally or unintentionally in daily life. Extensive sets of experiments, testing the ICLHF to
-              generate task plans and balance physical constraints with preferences, have demonstrated the efficiency of
-              our approach.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End paper abstract -->
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <sup>1</sup>College of Artificial Intelligence and Automation, Hohai University<br>
+                  <sup>2</sup>State Key Laboratory of General Artificial Intelligence, BIGAI, Beijing, China<br>
+                  <span class="publication-conference">
+                    IROS 2025 (Oral)
+                  </span>
+                </span>
+                <span class="corr-author"><small><br>✉ Indicates the Corresponding Authors</small></span>
+              </div>
 
-  <!-- Approach video -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <!-- Paper video. -->
-        <h2 class="title is-3">Approach</h2>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2508.07606" target="_blank" rel="noopener noreferrer"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
 
-        <h2 class="subtitle has-text-centered">
-          <br><strong>
-            A Brief Overview of ICLHF Workflow
-          </strong>
-        </h2>
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ICLHF/ICLHF" target="_blank" rel="noopener noreferrer"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
 
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <video poster="" id="algorithm_video" autoplay controls muted loop height="100%">
-              <source src="https://github.com/ICLHF/iclhf.github.io/raw/refs/heads/main/static/videos/algorithm.mp4"
-                type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-        <h2>
-          ICLHF algorithm includes five steps:
-          <ol>
-            <li>
-              Make initial plan with user's instruction and summarized preference
-            </li>
-            <li>
-              Three process for the preliminary planning of LLMs
-            </li>
-            <li>
-              Use POG, an algorithm for efficient sequential manipulation planning on the scene graph, to refine the
-              details of the planning
-            </li>
-            <li>
-              Execute the plan and get physical feedback
-            </li>
-            <li>
-              Reflect human preference and update the plan
-            </li>
-          </ol>
-
-        </h2>
-
-        <h2 class="subtitle has-text-centered">
-          <br><strong>
-            A Simulated Demonstration Case
-          </strong>
-        </h2>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <video poster="" id="case_video" autoplay controls muted loop height="100%">
-              <source src="https://github.com/ICLHF/iclhf.github.io/raw/refs/heads/main/static/videos/case.mp4"
-                type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End video -->
-
-
-  <!-- Video carousel -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Results</h2>
-
-        <h2 class="subtitle has-text-centered">
-          <br><strong>
-            Simulation Experiments
-          </strong>
-        </h2>
-
-        <section class="hero is-small">
-          <div class="hero-body">
-            <div class="container">
-
-              <span style="font-size: large; padding-left: 145px;">
-                Messy
-              </span>
-              <span style="font-size: large; padding-left: 255px;">
-                Physical
-              </span>
-              <span style="font-size: large; padding-left: 230px;">
-                Preference
-              </span>
-              <span style="font-size: large; padding-left: 190px;">
-                Physical + Preference
-              </span>
-
-              <div id="results-carousel" class="carousel results-carousel">
-                <div class="item">
-                  <img src="static/images/figure_1.png" alt="MY ALT TEXT" />
-                  <h2 class="subtitle has-text-centered">
-                    Unload car with human preference: "keep things in one place. I do not want to make two trips."
-                  </h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/figure_2.png" alt="MY ALT TEXT" />
-                  <h2 class="subtitle has-text-centered">
-                    Unpack suitcase with human preference: "The bed is for sleeping, and I do not like things that have
-                    nothing to do with sleeping on the bed."
-                  </h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/figure_3.png" alt="MY ALT TEXT" />
-                  <h2 class="subtitle has-text-centered">
-                    Clean room with human preference: "The bed is for sleeping, and I do not like things that have
-                    nothing to do with sleeping on the bed."
-                  </h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/figure_4.png" alt="MY ALT TEXT" />
-                  <h2 class="subtitle has-text-centered">
-                    Tidy table with human preference: "I like that everything is laid out flat on the table, not
-                    stacked."
-                  </h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/figure_5.png" alt="MY ALT TEXT" />
-                  <h2 class="subtitle has-text-centered">
-                    Tidy table with human preference: "I like that everything is laid out flat on the table, not
-                    stacked."
-                  </h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/figure_6.png" alt="MY ALT TEXT" />
-                  <h2 class="subtitle has-text-centered">
-                    Tidy table with human preference: "I like that everything is laid out flat on the table, not
-                    stacked."
-                  </h2>
-                </div>
-                <div class="item">
-                  <img src="static/images/figure_7.png" alt="MY ALT TEXT" />
-                  <h2 class="subtitle has-text-centered">
-                    Clean room with all the human preference.
-                  </h2>
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2508.07606" target="_blank" rel="noopener noreferrer"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <h2 class="subtitle has-text-centered">
-          <br><strong>
-            Real Robot Experiments
-          </strong>
-        </h2>
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video id="show" autoplay controls muted loop playsinline height="100%" preload="metadata">
+            <source src="https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/videos/show.mp4"
+              type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            We introduce In-Context Learning from Human Feedback (ICLHF) algorithm that learns human preferences in situ and combines them with physical constraints to accomplish the task.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- End teaser video -->
 
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <video poster="" id="real_robot_video" autoplay controls muted loop height="100%">
-              <source src="https://github.com/ICLHF/iclhf.github.io/raw/refs/heads/main/static/videos/real_robot.mp4"
-                type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End video carousel -->
-
-  <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
-  @article{li2025iclhf,
-    title = {In-situ Value-aligned Human-Robot Interactions with Physical Constraints}, 
-    author = {Hongtao Li and Ziyuan Jiao and Xiaofeng Liu and Hangxin Liu and Zilong Zheng},
-    journal = {arXiv preprint arXiv:2508.07606},
-    year = {2025}
-  }
-      </code></pre>
-    </div>
-  </section>
-  <!--End BibTex citation -->
-
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-
-            <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                target="_blank">Academic Project Page Template</a> which was adopted from the <a
-                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
-              <br> This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Equipped with Large Language Models (LLMs), human-centered robots are now capable of performing a wide range of tasks that were previously deemed challenging or unattainable. However, merely completing tasks is insufficient for cognitive robots, who should learn and apply human preferences to future scenarios.  In this work, we propose a framework that combines human preferences with physical constraints, requiring robots to complete tasks while considering both. Firstly, we developed a benchmark of everyday household activities, which are often evaluated based on specific preferences. We then introduced In-Context Learning from Human Feedback (ICLHF), where human feedback comes from direct instructions and adjustments made intentionally or unintentionally in daily life. Extensive sets of experiments, testing the ICLHF to generate task plans and balance physical constraints with preferences, have demonstrated the efficiency of our approach.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
+    <!-- End paper abstract -->
 
-  <!-- Statcounter tracking code -->
+    <!-- Approach -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Approach</h2>
 
-  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+          <h3 class="subtitle has-text-centered">
+            <strong>
+              A Brief Overview of ICLHF Workflow
+            </strong>
+          </h3>
 
-  <!-- End of Statcounter Code -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-video">
+                <video id="algorithm" autoplay controls muted loop playsinline height="100%" preload="metadata">
+                  <source src="https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/videos/algorithm.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="content has-text-justified">
+            <p><strong>ICLHF algorithm includes five steps:</strong></p>
+            <ol>
+              <li>
+                Make initial plan with user's instruction and summarized preference.
+              </li>
+              <li>
+                Three process for the preliminary planning of LLMs.
+              </li>
+              <li>
+                Use <a href="https://github.com/zyjiao4728/POG-Demo" target="_blank" rel="noopener noreferrer">POG</a>, an algorithm for efficient sequential manipulation planning on the scene graph, to refine the details of the planning.
+              </li>
+              <li>
+                Execute the plan and get physical feedback.
+              </li>
+              <li>
+                Reflect human preference and update the plan.
+              </li>
+            </ol>
+          </div>
+
+          <br>
+
+          <h3 class="subtitle has-text-centered">
+            <strong>
+              A Simulated Demonstration Case
+            </strong>
+          </h3>
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-video">
+                <video id="case" autoplay controls muted loop playsinline height="100%" preload="metadata">
+                  <source src="https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/videos/case.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End approach -->
+
+    <!-- Results -->
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Results</h2>
+
+          <h3 class="subtitle has-text-centered">
+            <strong>
+              Simulation Experiments
+            </strong>
+          </h3>
+
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <div class="item-texts">
+                <div class="text-block">Messy</div>
+                <div class="text-block">Physical Only</div>
+                <div class="text-block">Preference Only</div>
+                <div class="text-block">Physical + Preference</div>
+              </div>
+              <img src="static/images/figure_1.png" alt="Simulated Result 1" loading="lazy" />
+              <h4 class="subtitle has-text-centered">
+                Unload car with human preference: "keep things in one place. I do not want to make two trips."
+              </h4>
+            </div>
+            <div class="item">
+              <div class="item-texts">
+                <div class="text-block">Messy</div>
+                <div class="text-block">Physical Only</div>
+                <div class="text-block">Preference Only</div>
+                <div class="text-block">Physical + Preference</div>
+              </div>
+              <img src="static/images/figure_2.png" alt="Simulated Result 2" loading="lazy" />
+              <h4 class="subtitle has-text-centered">
+                Unpack suitcase with human preference: "The bed is for sleeping, and I do not like things that have nothing to do with sleeping on the bed."
+              </h4>
+            </div>
+            <div class="item">
+              <div class="item-texts">
+                <div class="text-block">Messy</div>
+                <div class="text-block">Physical Only</div>
+                <div class="text-block">Preference Only</div>
+                <div class="text-block">Physical + Preference</div>
+              </div>
+              <img src="static/images/figure_3.png" alt="Simulated Result 3" loading="lazy" />
+              <h4 class="subtitle has-text-centered">
+                Clean room with human preference: "The bed is for sleeping, and I do not like things that have nothing to do with sleeping on the bed."
+              </h4>
+            </div>
+            <div class="item">
+              <div class="item-texts">
+                <div class="text-block">Messy</div>
+                <div class="text-block">Physical Only</div>
+                <div class="text-block">Preference Only</div>
+                <div class="text-block">Physical + Preference</div>
+              </div>
+              <img src="static/images/figure_4.png" alt="Simulated Result 4" loading="lazy" />
+              <h4 class="subtitle has-text-centered">
+                Tidy table with human preference: "I like that everything is laid out flat on the table, not stacked."
+              </h4>
+            </div>
+            <div class="item">
+              <div class="item-texts">
+                <div class="text-block">Messy</div>
+                <div class="text-block">Physical Only</div>
+                <div class="text-block">Preference Only</div>
+                <div class="text-block">Physical + Preference</div>
+              </div>
+              <img src="static/images/figure_5.png" alt="Simulated Result 5" loading="lazy" />
+              <h4 class="subtitle has-text-centered">
+                Tidy table with human preference: "I like that everything is laid out flat on the table, not stacked."
+              </h4>
+            </div>
+            <div class="item">
+              <div class="item-texts">
+                <div class="text-block">Messy</div>
+                <div class="text-block">Physical Only</div>
+                <div class="text-block">Preference Only</div>
+                <div class="text-block">Physical + Preference</div>
+              </div>
+              <img src="static/images/figure_6.png" alt="Simulated Result 6" loading="lazy" />
+              <h4 class="subtitle has-text-centered">
+                Tidy table with human preference: "I like that everything is laid out flat on the table, not stacked."
+              </h4>
+            </div>
+            <div class="item">
+              <div class="item-texts">
+                <div class="text-block">Messy</div>
+                <div class="text-block">Physical Only</div>
+                <div class="text-block">Preference Only</div>
+                <div class="text-block">Physical + Preference</div>
+              </div>
+              <img src="static/images/figure_7.png" alt="Simulated Research 7" loading="lazy" />
+              <h4 class="subtitle has-text-centered">
+                Clean room with all the human preference.
+              </h4>
+            </div>
+          </div>
+
+          <br>
+
+          <h3 class="subtitle has-text-centered">
+            <strong>
+              Real Robot Experiments
+            </strong>
+          </h3>
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-video">
+                <video id="real_robot" autoplay controls muted loop playsinline height="100%" preload="metadata">
+                  <source
+                    src="https://raw.githubusercontent.com/ICLHF/iclhf.github.io/main/static/videos/real_robot.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End results -->
+
+    <!-- Paper poster -->
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">Poster</h2>
+          <iframe src="static/pdfs/IROS2025_Poster.pdf" width="100%" height="550">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!--End paper poster -->
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{li2025iclhf,
+    author={Li, Hongtao and Jiao, Ziyuan and Liu, Xiaofeng and Liu, Hangxin and Zheng, Zilong},
+    booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+    title={In-situ Value-aligned Human-Robot Interactions with Physical Constraints}, 
+    year={2025},
+    pages={9231--9238},
+    doi={10.1109/IROS60139.2025.11246572}
+}</code></pre>
+      </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a> project page.
+                You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
 
 </body>
 
